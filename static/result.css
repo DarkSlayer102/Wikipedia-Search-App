@@ -1,0 +1,50 @@
+body {
+    background-image: url(./images/outlast-2-dark-screen-shot-hd-wallpaper-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container{
+    width: 850px;
+    height:60px;
+}
+
+nav{
+    display: flex;
+}
+
+.myLogo{
+    font-size: 20px;
+    color: white;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+
+a{
+    color: wheat;
+    border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.fam_image{
+    width: 320px;
+
+}
+
+.lead {
+    color: black;
+}
+
+.display-4{
+    color: black;
+}
+
+.card-body{
+    color: black;
+}

@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(#FF9933,#FF9999);
+    color: white;
+}
+
+.container{
+    width: 850px;
+    height:60px;
+}
+
+nav{
+    margin:20px;
+    display: flex;
+}
+
+.myLogo{
+    border: 1px solid #FF0033;
+    font-size: 20px;
+    color: white;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+
+a{
+    border: 1px solid #FF0033;
+    color: white;
+    background-color:#FF0033;
+    text-decoration: none;
+    list-style: none;
+}
+
+.my_p{
+    color: white;
+}
+
+.my_blog_css{
+    border-top: 1px solid #3B3BA3;
+    border-bottom: 1px solid #3B3BA3;
+    margin-top: 102px;
+    margin-left:44px;
+}

@@ -1,0 +1,69 @@
+body {
+    background-image: url(./images/outlast-2-dark-screen-shot-hd-wallpaper-thumb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.container{
+    width: 850px;
+    height:60px;
+}
+
+nav{
+    display: flex;
+}
+
+.myLogo{
+    font-size: 20px;
+    color: white;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+}
+
+a{
+    color: wheat;
+    border-radius: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.into{
+    width: 90%;
+    height: 190px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.my_into{
+    display: flex;
+    justify-content: center;
+    margin: 120px;
+}
+
+.form-control{
+    width: 460px;
+    margin-top: 200px;
+    margin-left: 340px;
+}
+
+.my_button{
+    height: 40px;
+    width: 90px;
+    margin-top: 12px;
+    margin-left: 340px;
+    padding-left: 5px;
+    background-color: #53ff1a;
+    color: #ff00ff;
+    border: 1px solid #ccff33;
+}
+
+
+.form-label{
+    position: absolute;
+    left: 220px;
+}

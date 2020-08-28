@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+
+{%block head %}
+<link rel="stylesheet" href="static/result.css">
+<title>Result</title>
+{%endblock%}
+
+
+{%block body %}
+<!--NavBar-->
+<div class="container">
+    <nav>
+        <a href="#" class="myLogo">DarkSlayer</a>
+        <div class="main-nav">
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="#">Discord</a>
+            <a href="#">FaceBook</a>
+            <a href="#">Instgram</a>
+            <a href="#">Youtube Channel</a>
+            <a href="{{url_for('searching')}}">Searching</a>
+        </div>
+    </nav>
+</div>
+<section>
+    <div class="main">
+        {% for x in page_data %}
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, Guys</h1>
+            <p class="lead">{{x.summary}}</p>
+            <hr class="my-4">
+            <p></p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        {%endfor%}
+        {% for i in pages['images'][0:3]%}
+        <img src="{{i}}" alt="" class="fam_image">
+        {%endfor%}
+        {% for s in page_data %}
+        <div class="accordion" id="accordionExample">
+            <div class="card z-depth-0 bordered">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            "Click Here" Content {{searched}}
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        {{s.content}}
+                    </div>
+                </div>
+                {%endfor%}
+
+            </div>
+</section>
+{%endblock%}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+
+{%block head %}
+<link rel="stylesheet" href="static/index.css">
+<title>Home</title>
+{%endblock%}
+
+
+{%block body %}
+<!--NavBar-->
+<div class="container">
+    <nav>
+        <a href="#" class="myLogo">DarkSlayer</a>
+        <div class="main-nav">
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="#">Discord</a>
+            <a href="#">FaceBook</a>
+            <a href="#">Instgram</a>
+            <a href="#">Youtube Channel</a>
+            <a href="{{url_for('searching')}}">Searching</a>
+        </div>
+    </nav>
+</div>
+<section>
+    <div class="my_blog_css">
+        {% for i in my_blog %}
+        <h3 class="my_p">{{name}}:{{i.name}}</h3>
+        <h4 class="my_p">{{age}}:{{i.age}}</h4>
+        <p>{{job}}:{{i.job}}</p>
+        <p>{{Programming_Language}}:{{i.Programming_Languages}}</p>
+        <p>{{Web_Development}}:{{i.Web_Developments}}</p>
+        {%endfor%}
+    </div>
+</section>
+{%endblock%}
